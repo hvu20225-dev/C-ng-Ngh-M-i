@@ -1,0 +1,6 @@
+{
+  "name": "FutureTech - Ứng Dụng Công Nghệ Mới & Tương Lai",
+  "description": "Nền tảng khám phá, tra cứu, so sánh và trải nghiệm tương tác các công nghệ mới đột phá trong đời sống hiện đại và tương lai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

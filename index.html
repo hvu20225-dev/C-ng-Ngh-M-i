@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="vi" class="dark">
+  <head>
+    <script>
+      (function() {
+        try {
+          var _f = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _f;
+            },
+            set: function(v) {
+              _f = v;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          try {
+            var _pf = Window.prototype.fetch;
+            Object.defineProperty(Window.prototype, 'fetch', {
+              get: function() {
+                return _pf;
+              },
+              set: function(v) {
+                _pf = v;
+              },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e2) {}
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FutureTech - Ứng Dụng Công Nghệ Mới & Tương Lai</title>
+    <meta name="description" content="Nền tảng khám phá, tra cứu, so sánh và trải nghiệm tương tác các công nghệ mới đột phá trong đời sống hiện đại và tương lai." />
+    <meta property="og:title" content="FutureTech - Ứng Dụng Công Nghệ Mới & Tương Lai" />
+    <meta property="og:description" content="Nền tảng khám phá, tra cứu, so sánh và trải nghiệm tương tác các công nghệ mới đột phá trong đời sống hiện đại và tương lai." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
